@@ -1,9 +1,12 @@
-FROM node:8
+FROM node:latest
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package.json ./
+RUN npm install nodemon -g
+
+# Install app dependencies
+COPY package*.json ./
 
 RUN npm install
 # If you are building your code for production
@@ -13,4 +16,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
-CMD [ "npm", "start" ]
+CMD node app.js
