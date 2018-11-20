@@ -4,13 +4,6 @@ services:
     image: mongo
     ports:
     - "27017:27017"
-  api:
-    build: ./BACKEND
-    ports:
-    - "3000:3000"
-    depends_on:
-    - mongo
-    command: node app.js
   web:
     build: ./frontend
     ports:
