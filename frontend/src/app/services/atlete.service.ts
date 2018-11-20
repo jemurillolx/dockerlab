@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class AtleteService {
   selectedAtlete: Atlete;
   atletes: Atlete[];
-  readonly URL_API = 'http://localhost:3000/home/';
+  readonly URL_API = 'http://ec2-18-222-56-186.us-east-2.compute.amazonaws.com:3000/home/';  /*'http://localhost:3000/home/';*/
   constructor(private http: HttpClient) {
     this.selectedAtlete  = new Atlete();
   }
