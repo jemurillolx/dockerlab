@@ -15,3 +15,4 @@ Es un Stack MEAN - Mongo Express Angular y Node
 Y la implementacion en el lado de Amazong se puede basar en https://node.university/blog/10067/aws-ecs-containers
 En el lado de Azure, es muy similar a la misma documentación.
 
+Se logró implementar el Backend con el puerto de Default 3000 y el Front-End con el puerto de default 4200.
